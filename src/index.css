@@ -1,0 +1,64 @@
+/* Tailwind CSS v4 — activated via @tailwindcss/vite plugin in vite.config.js */
+@import "tailwindcss";
+
+/* ─── Design Tokens ──────────────────────────────────────────────────────── */
+@theme {
+  /* Space/Deep sky backgrounds */
+  --color-space-950: #020408;
+  --color-space-900: #050b14;
+  --color-space-800: #0a1628;
+  --color-space-700: #0f2040;
+  --color-space-600: #1a3560;
+  --color-space-500: #243f6a;
+
+  /* Solar — warm amber/gold for CME highlights */
+  --color-solar-300: #fde68a;
+  --color-solar-400: #fbbf24;
+  --color-solar-500: #f59e0b;
+  --color-solar-600: #d97706;
+
+  /* Plasma — orange for high-speed events */
+  --color-plasma-300: #fdba74;
+  --color-plasma-400: #f97316;
+  --color-plasma-500: #ea580c;
+  --color-plasma-600: #c2410c;
+
+  /* Corona — purple for geomagnetic storms */
+  --color-corona-300: #d8b4fe;
+  --color-corona-400: #c084fc;
+  --color-corona-500: #a855f7;
+  --color-corona-600: #9333ea;
+
+  /* Typography */
+  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', ui-monospace, Consolas, monospace;
+}
+
+/* ─── Base Layer ─────────────────────────────────────────────────────────── */
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    font-family: var(--font-sans);
+    background-color: #020408;
+    color: #e2e8f0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+  }
+
+  #root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+}
