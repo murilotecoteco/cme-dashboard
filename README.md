@@ -1,7 +1,7 @@
 # Solar CME Monitor
 
 <p align="center">
-  <img src=".github/banner.png" alt="Solar CME Monitor Banner">
+  <img src="https://github.com/user-attachments/assets/80e1b916-1c2a-4afc-b724-3f6374e32eec" alt="Solar CME Monitor Banner">
 </p>
 
 <p align="center">
@@ -30,6 +30,10 @@
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
 
+</p>
+
+<p align="center">
+  <b>Click the buttons below to open the project:</b>
 </p>
 
 <p align="center">
@@ -153,7 +157,7 @@ The React application communicates with a Supabase Edge Function, which securely
 
 # Project Structure
 
-```text
+```
 solar-cme-monitor/
 │
 ├── public/
@@ -189,17 +193,8 @@ solar-cme-monitor/
 
 ```bash
 git clone https://github.com/nasa-cme/cme-dashboard.git
-```
-
-```bash
 cd cme-dashboard
-```
-
-```bash
 npm install
-```
-
-```bash
 npm run dev
 ```
 
