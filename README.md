@@ -50,7 +50,6 @@ The project was developed for educational purposes, with a focus on API integrat
 - [Environment Variables](#environment-variables)
 - [Deployment](#deployment)
 - [Roadmap](#roadmap)
-- [Contributions](#contributions)
 - [License](#license)
 
 ---
