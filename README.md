@@ -33,6 +33,12 @@
 </p>
 
 <p align="center">
+  <b>Demo video:</b>
+</p>
+
+https://github.com/user-attachments/assets/d337e975-9ac9-48da-b97e-fff1700133f5
+
+<p align="center">
   <b>Click the buttons below to open the project:</b>
 </p>
 
