@@ -12,7 +12,7 @@
 
 ![CI](https://github.com/nasa-cme/cme-dashboard/actions/workflows/ci.yml/badge.svg)
 ![Status](https://img.shields.io/badge/status-under%20development-orange)
-![License](https://img.shields.io/badge/license-none-lightgrey)
+
 
 </p>
 
