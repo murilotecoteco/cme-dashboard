@@ -70,6 +70,7 @@ https://github.com/user-attachments/assets/d337e975-9ac9-48da-b97e-fff1700133f5
 - Project Structure
 - Getting Started
 - Environment Variables
+- Testing
 - Deployment
 - Roadmap
 - License
@@ -95,6 +96,7 @@ This project was built to practice and demonstrate:
 - Responsive interface development
 - Deployment workflows
 - GitHub Actions CI
+- Automated testing with Vitest and Testing Library
 
 ---
 
@@ -120,6 +122,7 @@ This project was built to practice and demonstrate:
 - ✅ Responsive interface
 - ✅ Error handling
 - ✅ Charts and statistics
+- ✅ Automated tests (Vitest + Testing Library)
 - ⏳ CSV export
 - ⏳ Advanced filters
 
@@ -129,14 +132,15 @@ This project was built to practice and demonstrate:
 
 | Layer | Technology |
 |------|------------|
-| Frontend | React 18 |
+| Frontend | React 19 |
 | Build Tool | Vite |
 | Language | JavaScript (ES6+) |
-| Styling | CSS3 |
+| Styling | CSS3, Tailwind CSS |
 | Database | PostgreSQL (Supabase) |
 | Backend | Supabase Edge Functions |
 | Runtime | Deno |
 | API | NASA DONKI API |
+| Testing | Vitest, Testing Library |
 | Deployment | Vercel |
 | CI/CD | GitHub Actions |
 | Version Control | Git & GitHub |
@@ -172,10 +176,16 @@ solar-cme-monitor/
 ├── public/
 ├── src/
 │   ├── components/
+│   │   ├── __tests__/
+│   │   ├── cme/
+│   │   ├── layout/
+│   │   └── ui/
 │   ├── hooks/
 │   ├── pages/
 │   ├── services/
+│   ├── test/
 │   ├── utils/
+│   │   └── __tests__/
 │   ├── App.jsx
 │   └── main.jsx
 │
@@ -232,6 +242,26 @@ supabase secrets set NASA_API_KEY=your_key
 
 ---
 
+# Testing
+
+The project includes an automated test suite built with **Vitest** and **Testing Library**, covering pure utility functions and UI components.
+
+```bash
+npm test              # run once
+npm run test:watch    # watch mode
+npm run test:coverage # with coverage report
+```
+
+What is covered:
+
+* **Formatters** (`utils/formatters.js`) — date formatting, `timeAgo` with fake timers, speed formatting and locale handling, angle formatting, flare class extraction, and max Kp index calculation
+* **Constants** (`utils/constants.js`) — structural invariants the rest of the app depends on: threshold ordering, required keys in type/color maps, storm level sort order, and nav item shape
+* **Badge component** — renders children, applies correct variant classes, falls back to default for unknown variants, and merges custom `className` props
+
+Tests run fully offline: no NASA API key, no Supabase connection, and no network access is required to run the suite.
+
+---
+
 # Deployment
 
 The application is deployed on Vercel.
@@ -253,6 +283,7 @@ https://solar-cme-monitor.vercel.app
 - [x] Responsive UI
 - [x] Statistics dashboard
 - [x] Charts
+- [x] Automated tests
 - [ ] CSV export
 - [ ] Advanced filtering
 - [ ] Performance optimizations
