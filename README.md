@@ -86,18 +86,17 @@ The project focuses on modern frontend architecture, API integration, cloud data
 
 ---
 
-# Why this project
+# Technical Focus
 
-This project was built to practice and demonstrate:
+This project was architected to showcase modern web development standards, specifically focusing on:
 
-- React application architecture
-- REST API integration
-- Secure API proxying
-- Cloud database design
-- Responsive interface development
-- Deployment workflows
-- GitHub Actions CI
+- React application architecture and state management
+- Secure REST API integration and proxying
+- Cloud database design (PostgreSQL)
+- Serverless backend implementation (Supabase Edge Functions)
+- Responsive UI/UX development
 - Automated testing with Vitest and Testing Library
+- CI/CD pipelines with GitHub Actions
 
 ---
 
@@ -291,8 +290,3 @@ https://solar-cme-monitor.vercel.app
 
 ---
 
-# License
-
-This project was developed for educational purposes.
-
-No license has been applied.
