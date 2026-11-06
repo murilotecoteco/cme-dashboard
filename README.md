@@ -2,6 +2,8 @@
 
 Projeto prático para estudar consumo de dados científicos, visualização e persistência de eventos de ejeção de massa coronal (CME) da API NASA DONKI.
 
+> Este repositório é a versão pessoal de estudo. O projeto acadêmico colaborativo da organização NASA-CME está em [Nasa-Cme-Dashboard](https://github.com/nasa-cme/Nasa-Cme-Dashboard) e possui arquitetura e documentação próprias.
+
 [![CI](https://github.com/murilotecoteco/cme-dashboard/actions/workflows/ci.yml/badge.svg)](https://github.com/murilotecoteco/cme-dashboard/actions/workflows/ci.yml)
 
 [Live Demo](https://solar-cme-monitor.vercel.app/) · [Código-fonte](https://github.com/murilotecoteco/cme-dashboard)
