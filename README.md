@@ -188,17 +188,12 @@ solar-cme-monitor/
 │   ├── utils/
 │   │   └── __tests__/
 │   ├── App.jsx
-│   └── main.jsx
-│
-│   # Frontend: JavaScript/JSX (`.js` and `.jsx`)
-│
-├── supabase/
-│   └── functions/
-│       └── donki-proxy/
-│           └── index.ts       # Edge Function: TypeScript/Deno
+│   └── main.jsx              # Frontend entry point (JavaScript/JSX)
 │
 ├── supabase/
 │   ├── functions/
+│   │   └── donki-proxy/
+│   │       └── index.ts      # Edge Function (TypeScript/Deno)
 │   └── migrations/
 │
 ├── .env.example
