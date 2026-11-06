@@ -10,7 +10,7 @@
 
 <p align="center">
 
-![CI](https://github.com/nasa-cme/cme-dashboard/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/murilotecoteco/cme-dashboard/actions/workflows/ci.yml/badge.svg)
 ![Status](https://img.shields.io/badge/status-completed-brightgreen)
 
 </p>
@@ -48,7 +48,7 @@ https://github.com/user-attachments/assets/d337e975-9ac9-48da-b97e-fff1700133f5
 <img src="https://img.shields.io/badge/Live-Demo-blue?style=for-the-badge">
 </a>
 
-<a href="https://github.com/nasa-cme/cme-dashboard">
+<a href="https://github.com/murilotecoteco/cme-dashboard">
 <img src="https://img.shields.io/badge/GitHub-Repository-black?style=for-the-badge">
 </a>
 
@@ -82,7 +82,7 @@ https://github.com/user-attachments/assets/d337e975-9ac9-48da-b97e-fff1700133f5
 
 Solar CME Monitor is a web application built with React that allows users to search, visualize and persist Coronal Mass Ejection (CME) events from NASA's DONKI API.
 
-The project focuses on modern frontend architecture, API integration, cloud databases and secure server-side communication using Supabase Edge Functions.
+The project focuses on modern frontend architecture, API integration, cloud databases and secure server-side communication using Supabase Edge Functions. The browser application is written in JavaScript with JSX (`.js`/`.jsx` files); TypeScript is used explicitly in the Deno Edge Function that proxies NASA DONKI requests (`supabase/functions/donki-proxy/index.ts`).
 
 ---
 
@@ -132,9 +132,10 @@ This project was architected to showcase modern web development standards, speci
 
 | Layer | Technology |
 |------|------------|
-| Frontend | React 19 |
+| Frontend | React 19 with JSX |
 | Build Tool | Vite |
-| Language | JavaScript (ES6+) |
+| Frontend language | JavaScript (ES modules, `.js`/`.jsx`) |
+| Edge Function language | TypeScript (`supabase/functions/donki-proxy/index.ts`) |
 | Styling | CSS3, Tailwind CSS |
 | Database | PostgreSQL (Supabase) |
 | Backend | Supabase Edge Functions |
@@ -189,6 +190,13 @@ solar-cme-monitor/
 │   ├── App.jsx
 │   └── main.jsx
 │
+│   # Frontend: JavaScript/JSX (`.js` and `.jsx`)
+│
+├── supabase/
+│   └── functions/
+│       └── donki-proxy/
+│           └── index.ts       # Edge Function: TypeScript/Deno
+│
 ├── supabase/
 │   ├── functions/
 │   └── migrations/
@@ -211,7 +219,7 @@ solar-cme-monitor/
 ## Installation
 
 ```bash
-git clone https://github.com/nasa-cme/cme-dashboard.git
+git clone https://github.com/murilotecoteco/cme-dashboard.git
 cd cme-dashboard
 npm install
 npm run dev
