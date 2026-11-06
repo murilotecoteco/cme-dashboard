@@ -55,7 +55,7 @@ const TECH_STACK = [
 const RESOURCES = [
   { label: 'Get NASA API Key',   Icon: Key,        href: 'https://api.nasa.gov/',                     variant: 'solar'   },
   { label: 'DONKI Portal',       Icon: Satellite,  href: 'https://kauai.ccmc.gsfc.nasa.gov/DONKI/',   variant: 'default' },
-  { label: 'GitHub Repository',  Icon: FolderGit2, href: 'https://github.com/murilotecoteco/nasa-cme', variant: 'default' },
+  { label: 'GitHub Repository',  Icon: FolderGit2, href: 'https://github.com/murilotecoteco/cme-dashboard', variant: 'default' },
   { label: 'Supabase Dashboard', Icon: Database,   href: 'https://supabase.com/dashboard',             variant: 'corona'  },
 ]
 
