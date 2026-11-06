@@ -53,7 +53,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="https://github.com/murilotecoteco/nasa-cme"
+                  href="https://github.com/murilotecoteco/cme-dashboard"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-amber-400 transition-colors"
